@@ -24,10 +24,10 @@ namespace ProjectForGuys
             {
                 MessageBox.Show("Nie mam wystarczającej ilości pieniędzy, aby Ci dać " + amount, Name + " powiedział ...");
                 return 0;
-            
+
             }
         }
-    
+
         public int ReceiveCash(int amount)
         {
             if (amount > 0)
@@ -41,3 +41,5 @@ namespace ProjectForGuys
                 return 0;
             }
         }
+    }
+}
