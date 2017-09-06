@@ -27,20 +27,16 @@ namespace ProjectForGuys
             InitializeComponent();
 
 
-            joe = new Guy();
-            joe.Cash = 50;
-            joe.Name = "Joe";
+            joe = new Guy() { Cash = 50, Name = "Joe" };
 
-            bob = new Guy();
-            bob.Cash = 100;
-            bob.Name = "Bob";
+            bob = new Guy() { Cash = 100, Name = "Bob" };
 
             UpdateForm();
         }
-            
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if(bank>= 10)
+            if (bank >= 10)
             {
                 bank -= joe.ReceiveCash(10);
                 UpdateForm();
@@ -54,6 +50,18 @@ namespace ProjectForGuys
         private void button2_Click(object sender, EventArgs e)
         {
             bank += bob.GiveCash(5);
+            UpdateForm();
+        }
+
+        private void joeGivesToBob_Click(object sender, EventArgs e)
+        {
+            bob.ReceiveCash(joe.GiveCash(10));
+            UpdateForm();
+        }
+
+        private void bobGivesToJoe_Click(object sender, EventArgs e)
+        {
+            joe.ReceiveCash(bob.GiveCash(5));
             UpdateForm();
         }
     }
