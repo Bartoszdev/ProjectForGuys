@@ -35,6 +35,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.joeGivesToBob = new System.Windows.Forms.Button();
             this.bobGivesToJoe = new System.Windows.Forms.Button();
+            this.joeGivesCashBank = new System.Windows.Forms.Button();
+            this.bobGivesCashBank = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // joesCashLabel
@@ -104,11 +106,33 @@
             this.bobGivesToJoe.UseVisualStyleBackColor = true;
             this.bobGivesToJoe.Click += new System.EventHandler(this.bobGivesToJoe_Click);
             // 
+            // joeGivesCashBank
+            // 
+            this.joeGivesCashBank.Location = new System.Drawing.Point(15, 290);
+            this.joeGivesCashBank.Name = "joeGivesCashBank";
+            this.joeGivesCashBank.Size = new System.Drawing.Size(108, 58);
+            this.joeGivesCashBank.TabIndex = 7;
+            this.joeGivesCashBank.Text = "Joe daje do banku 15 zł";
+            this.joeGivesCashBank.UseVisualStyleBackColor = true;
+            this.joeGivesCashBank.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // bobGivesCashBank
+            // 
+            this.bobGivesCashBank.Location = new System.Drawing.Point(146, 290);
+            this.bobGivesCashBank.Name = "bobGivesCashBank";
+            this.bobGivesCashBank.Size = new System.Drawing.Size(108, 58);
+            this.bobGivesCashBank.TabIndex = 8;
+            this.bobGivesCashBank.Text = "Bob daje do banku 20 zł";
+            this.bobGivesCashBank.UseVisualStyleBackColor = true;
+            this.bobGivesCashBank.Click += new System.EventHandler(this.bobGivesCashBank_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 283);
+            this.ClientSize = new System.Drawing.Size(284, 377);
+            this.Controls.Add(this.bobGivesCashBank);
+            this.Controls.Add(this.joeGivesCashBank);
             this.Controls.Add(this.bobGivesToJoe);
             this.Controls.Add(this.joeGivesToBob);
             this.Controls.Add(this.button2);
@@ -132,6 +156,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button joeGivesToBob;
         private System.Windows.Forms.Button bobGivesToJoe;
+        private System.Windows.Forms.Button joeGivesCashBank;
+        private System.Windows.Forms.Button bobGivesCashBank;
     }
 }
 

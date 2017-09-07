@@ -21,6 +21,10 @@ namespace ProjectForGuys
             joesCashLabel.Text = joe.Name + " ma " + joe.Cash + " zł";
             bobsCashLabel.Text = bob.Name + " ma " + bob.Cash + " zł";
             bankCashLabel.Text = "Bank ma " + bank + " zł";
+            bankCashLabel.Text = "Bank ma " + bank + " zł";
+            bankCashLabel.Text = "Bank ma " + bank + " zł";
+            bankCashLabel.Text = "Bank ma " + bank + " zł";
+            bankCashLabel.Text = "Bank ma " + bank + " zł";
         }
         public Form1()
         {
@@ -62,6 +66,18 @@ namespace ProjectForGuys
         private void bobGivesToJoe_Click(object sender, EventArgs e)
         {
             joe.ReceiveCash(bob.GiveCash(5));
+            UpdateForm();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bank += joe.GiveCash(15);
+            UpdateForm();
+        }
+
+        private void bobGivesCashBank_Click(object sender, EventArgs e)
+        {
+            bank += bob.GiveCash(20);
             UpdateForm();
         }
     }
