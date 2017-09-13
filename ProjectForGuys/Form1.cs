@@ -80,5 +80,29 @@ namespace ProjectForGuys
             bank += bob.GiveCash(20);
             UpdateForm();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            
+            
+            if (bob.Cash >= 10 && joe.Cash >= 10)
+            {
+                bank += bob.GiveCash(10);
+                bank += joe.GiveCash(10);
+                UpdateForm();
+
+            }
+         /*   else if(joe.Cash >= 10)
+             {
+                bank += joe.GiveCash(10);
+                UpdateForm();
+            }
+            */
+            else
+            {
+                MessageBox.Show("Joe bądź Bob nie mają wystarczającej ilości pieniędzy, by oddać do banku !");
+            }
+            
+        }
     }
 }

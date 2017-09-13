@@ -37,6 +37,7 @@
             this.bobGivesToJoe = new System.Windows.Forms.Button();
             this.joeGivesCashBank = new System.Windows.Forms.Button();
             this.bobGivesCashBank = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // joesCashLabel
@@ -126,11 +127,22 @@
             this.bobGivesCashBank.UseVisualStyleBackColor = true;
             this.bobGivesCashBank.Click += new System.EventHandler(this.bobGivesCashBank_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(15, 364);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(108, 58);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Obaj oddają taką samą ilość do banku";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 377);
+            this.ClientSize = new System.Drawing.Size(284, 444);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.bobGivesCashBank);
             this.Controls.Add(this.joeGivesCashBank);
             this.Controls.Add(this.bobGivesToJoe);
@@ -141,7 +153,7 @@
             this.Controls.Add(this.bobsCashLabel);
             this.Controls.Add(this.joesCashLabel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ProjectGuys";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +170,7 @@
         private System.Windows.Forms.Button bobGivesToJoe;
         private System.Windows.Forms.Button joeGivesCashBank;
         private System.Windows.Forms.Button bobGivesCashBank;
+        private System.Windows.Forms.Button button3;
     }
 }
 
